@@ -21,9 +21,7 @@ export const products = pgTable(
       brand: text('brand').notNull(),
       description: text('description').notNull(),
       stock: integer('stock').notNull(),
-      price: numeric('price', { precision: 12, scale: 2 })
-         .notNull()
-         .default('0'),
+      price: numeric('price', { precision: 12, scale: 2 }).notNull().default('0'),
       rating: numeric('rating', { precision: 3, scale: 2 })
          .notNull()
          .default('0'),
